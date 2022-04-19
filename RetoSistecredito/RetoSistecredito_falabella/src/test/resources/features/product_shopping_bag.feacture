@@ -19,9 +19,9 @@ Feature: buy a product in the falabella application
       | <region> | <city> | <commune> | <address> | <complement> |
     Then the user should see that the price corresponds to the product selected plus the shipping price
     Examples:
-      | product        | region    | city        | commune     | address              | complement        |
-      | televisor      | Antioquia | Itagui      | Itagui      | Calle 25a # 50b - 05 | Cedros de Badajoz |
-      | colchon        | antioquia | la estrella | la estrella | Calle 78Sur # 50f 41 | Bosques del Pinar |
+      | product | region    | city        | commune     | address              | complement        |
+      | camara  | Antioquia | Itagui      | Itagui      | Calle 25a # 50b - 05 | Cedros de Badajoz |
+      | colchon | antioquia | la estrella | la estrella | Calle 78Sur # 50f 41 | Bosques del Pinar |
 
 
   @MessageStock
@@ -36,7 +36,7 @@ Feature: buy a product in the falabella application
       | product      |
       | play         |
       | televisor lg |
-      | vajilla |
+      | vajilla      |
 
 
   @ProductMultiple
@@ -44,7 +44,7 @@ Feature: buy a product in the falabella application
     Given the user is in the falabella application
     When the user searches for a product
       | product  |
-      | <camara> |
+      | <nevera> |
     And user enters 3 products
     And the user chooses the dispatch options
       | region   | city   | commune   | address   | complement   |
